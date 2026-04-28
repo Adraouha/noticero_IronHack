@@ -1,37 +1,40 @@
-# IronNous 📰
+# CV Hassan Adraou 🎯
 
-Projecte de pagina de noticies tecnologiques desenvolupat amb HTML i CSS.
+Curriculum Vitae web de Hassan Adraou. Projecte de pàgina web professional desenvolupat amb HTML i CSS.
 
-## Caracteristiques
+## Característiques
 
-- Contingut completament en catala
-- Disseny responsive basic
-- Estructura semantica HTML5
-- Layout amb Grid i Flexbox
-- Estil visual inspirat en la identitat d'IronHack
-- Codi simple i facil d'entendre per a nivell principiant
+- Contingut completament en català
+- Disseny responsive amb Flexbox
+- Estructura semàntica HTML5
+- Layout modern amb cards i grid
+- Disseny professional amb enfocament visual
+- Codi ben estructurat i fàcil de mantenir
 
 ## Tecnologies
 
 - HTML5
-- CSS3
+- CSS3 (Flexbox)
 
 ## Objectiu
 
-Practicar maquetacio web, organitzacio de contingut i reutilitzacio d'estils amb una sola pagina informativa.
+Presentar un CV web professional que mostra l'experiència, habilitats i interessos de Hassan Adraou de forma visual i clara.
 
 ## Estructura
 
 ```text
-/noticero_IronHack
+/cv_hassanFlexBox
 |- index.html
 |- style.css
 |- README.md
 ```
 
-## Seccions
+## Seccions del CV
 
-- Nacional
-- Internacional
-- Cultura digital
-- Esports i rendiment
+- **Capçalera (Hero)**: Foto de perfil i presentació professional
+- **Sobre mi**: Experiència i formació
+- **3 Hobbies Principals**: Lectura, Viatjar, Amor pels gats
+- **Altres Hobbies i Interessos**: Música de rap, disseny gràfic, programació, senderisme, etc.
+- **Idiomes**: Àrab (materna), espanyol, francès, anglès, català
+- **Eines**: Microsoft 365, Photoshop, Illustrator, InDesign, HTML, CSS, Bootstrap, WordPress, Trello, Trados, OmegaT
+- **Fortaleses**: Treball en equip, organització, comunicació intercultural, iniciativa
