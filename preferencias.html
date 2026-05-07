@@ -1,296 +1,172 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preferències | Hassan Adraou</title>
-    <!-- Font Awesome per als icones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Estil principal compartit amb about.html -->
+    <title>Preferencias | Hassan Adraou</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Estils específics de les taules, adaptats al tema de style.css */
-
-        nav {
-            background: var(--surface);
-            border-bottom: 2px solid var(--line);
-            padding: 12px 20px;
-            text-align: center;
-        }
-
-        nav a {
-            color: var(--accent);
-            text-decoration: none;
-            margin: 0 18px;
-            font-weight: bold;
-            font-family: Georgia, serif;
-            transition: color 0.2s;
-        }
-
-        nav a:hover {
-            color: var(--accent-soft);
-        }
-
-        /* Capçalera de pàgina sense foto, com a variant del .hero */
-        .page-hero {
-            max-width: 1160px;
-            margin: 0 auto;
-            padding: 40px 20px 16px;
-            text-align: center;
-        }
-
-        .page-hero h1 {
-            font-size: clamp(2rem, 4vw, 3.5rem);
-            margin-bottom: 10px;
-        }
-
-        .page-hero .slogan {
-            font-size: 1.1rem;
-            color: var(--accent-deep);
-            margin: 0 auto;
-        }
-
-        /* Taules */
-        .table-wrapper {
-            overflow-x: auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 8px;
-            font-family: Georgia, serif;
-        }
-
-        thead th {
-            background: var(--surface-strong);
-            color: var(--accent);
-            padding: 14px 16px;
-            text-align: left;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            border-bottom: 2px solid var(--accent);
-        }
-
-        tbody td {
-            padding: 13px 16px;
-            border-bottom: 1px solid var(--line);
-            color: #e0e7ef;
-            vertical-align: middle;
-        }
-
-        tbody tr:hover {
-            background: var(--surface-strong);
-        }
-
-        tbody tr:hover td {
-            color: #ffffff;
-        }
-
-        tbody tr:hover td strong {
-            color: var(--accent-soft);
-        }
-
-        /* Badge per a gèneres */
-        .badge {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.78rem;
-            background: rgba(24, 168, 255, 0.15);
-            color: var(--accent);
-            border: 1px solid var(--accent);
-            white-space: nowrap;
-        }
-
-        /* Icones multimèdia */
-        .media-link {
-            font-size: 1.3rem;
-            margin-right: 10px;
-            transition: transform 0.2s, color 0.2s;
-            display: inline-block;
-        }
-
-        .media-link:hover {
-            transform: scale(1.25);
-        }
-
-        .video-icon { color: #e53935; }
-        .audio-icon { color: var(--accent); }
-
-        /* Puntuació */
-        .stars {
-            color: var(--accent-soft);
-            font-size: 1rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 24px;
-            color: var(--muted);
-            font-size: 0.9rem;
-            border-top: 1px solid var(--line);
-            margin-top: 20px;
-        }
-    </style>
 </head>
-<body>
 
-    <!-- NAVEGACIÓ -->
-    <nav>
-        <a href="index.html"><i class="fas fa-user"></i> Sobre mi</a>
-        <a href="preferencias.html"><i class="fas fa-star"></i> Preferències</a>
-        <a href="tarjeta.html"><i class="fas fa-id-card"></i> La meva targeta</a>
+<body>
+    <nav class="site-nav" aria-label="Navegacion principal">
+        <a href="index.html">Sobre mi</a>
+        <a href="index.html#experiencia">Experiencia</a>
+        <a href="index.html#proyectos">Proyectos</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="preferencias.html">Preferencias</a>
+        <a href="tarjeta.html">Tarjeta</a>
+        <a class="nav-download" href="cv-hassan-adraou.pdf" download>Descargar CV</a>
     </nav>
 
-    <!-- CAPÇALERA DE PÀGINA -->
-    <div class="page-hero">
-        <h1>Les meves preferències</h1>
-        <p class="slogan">Música, cinema i literatura que m'han marcat</p>
-    </div>
+    <header class="page-hero">
+        <p class="eyebrow">Gustos personales</p>
+        <h1>Mis preferencias</h1>
+        <p class="slogan">Rap, cine de aventuras y libros que conectan pensamiento, lógica y literatura.</p>
+    </header>
 
-    <!-- CONTINGUT PRINCIPAL -->
     <main class="page">
-
-        <!-- TAULA 1: MÚSICA -->
         <section class="card">
             <div class="section-head">
-                <h2><i class="fas fa-music"></i> La meva música favorita</h2>
+                <h2>Musica favorita</h2>
+                <p>Basada en mi proyecto Hack Mi Musica.</p>
             </div>
+
+            <div class="preference-grid">
+                <article class="preference-card">
+                    <span class="tag">Rap español</span>
+                    <h3>Nach</h3>
+                    <p>Referente del rap consciente, con letras introspectivas y una escritura muy cercana a la poesía.</p>
+                    <p class="song-note">Canciones destacadas: Una Vida, Efectos Vocales y Manifiesto.</p>
+                </article>
+
+                <article class="preference-card">
+                    <span class="tag">Rap social</span>
+                    <h3>Falsa Alarma</h3>
+                    <p>Dúo de rap español con contenido directo, social y político dentro de la escena underground.</p>
+                    <p class="song-note">Canciones destacadas: La Bala, La Vida Es Un Sueño y El Mundo Es Mío.</p>
+                </article>
+
+                <article class="preference-card">
+                    <span class="tag">Rap urbano</span>
+                    <h3>Morad</h3>
+                    <p>Artista de Barcelona con un estilo realista, directo y conectado con vivencias personales.</p>
+                    <p class="song-note">Canciones destacadas: Pelele, El Mundo Es Mío y No Me Puedo Quedar.</p>
+                </article>
+
+                <article class="preference-card">
+                    <span class="tag">Rap internacional</span>
+                    <h3>Residente</h3>
+                    <p>Letra crítica, identidad latinoamericana y compromiso social con una voz muy reconocible.</p>
+                    <p class="song-note">Canciones destacadas: Desencuentro, Que Locura Enamorarse y Bizcocho.</p>
+                </article>
+
+                <article class="preference-card">
+                    <span class="tag">Rap francés</span>
+                    <h3>Kery James</h3>
+                    <p>Rap francés comprometido con justicia social, desigualdad y memoria colectiva.</p>
+                    <p class="song-note">Canciones destacadas: Lettre a la République, Racism y Dont Like.</p>
+                </article>
+
+                <article class="preference-card">
+                    <span class="tag">Hip-hop global</span>
+                    <h3>J. Cole, Drake y Travis Scott</h3>
+                    <p>Una mezcla de lírica introspectiva, rap melódico y producción moderna para distintos momentos.</p>
+                    <a href="https://adraouha.github.io/hackMiMusica/" target="_blank" rel="noreferrer">Ver Hack Mi Musica</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="section-head">
+                <h2>Peliculas imprescindibles</h2>
+                <p>Historias con aventura, mundos grandes y personajes memorables.</p>
+            </div>
+
             <div class="table-wrapper">
-                <table>
+                <table class="preference-table">
                     <thead>
                         <tr>
-                            <th rowspan="2">Artista / Cantant</th>
-                            <th rowspan="2">Gènere</th>
-                            <th colspan="2">Llançaments destacats</th>
-                            <th rowspan="2">Multimèdia</th>
-                        </tr>
-                        <tr>
-                            <th>Dècada 2010</th>
-                            <th>Dècada 2020</th>
+                            <th>Saga</th>
+                            <th>Tipo</th>
+                            <th>Lo que me atrae</th>
+                            <th>Por que destaca</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Rosalía</strong></td>
-                            <td><span class="badge">Flamenc Pop</span></td>
-                            <td>El Mal Querer (2018)</td>
-                            <td>Motomami (2022)</td>
-                            <td>
-                                <a href="https://www.youtube.com/watch?v=Rht7EBAD7TQ" class="media-link video-icon" target="_blank" title="Veure Vídeo"><i class="fab fa-youtube"></i></a>
-                                <a href="#" class="media-link audio-icon" title="Escoltar Àudio"><i class="fas fa-volume-up"></i></a>
-                            </td>
+                            <td><strong>El Señor de los Anillos</strong></td>
+                            <td>Fantasía épica</td>
+                            <td>Amistad, viaje, responsabilidad y resistencia.</td>
+                            <td>Construye un mundo profundo y una aventura emocional.</td>
                         </tr>
                         <tr>
-                            <td><strong>C. Tangana</strong></td>
-                            <td><span class="badge">Urbà / Folk</span></td>
-                            <td>Ídolo (2017)</td>
-                            <td>El Madrileño (2021)</td>
-                            <td>
-                                <a href="https://www.youtube.com/watch?v=p4v380T_9_M" class="media-link video-icon" target="_blank" title="Veure Vídeo"><i class="fab fa-youtube"></i></a>
-                                <a href="#" class="media-link audio-icon" title="Escoltar Àudio"><i class="fas fa-volume-up"></i></a>
-                            </td>
+                            <td><strong>Star Wars</strong></td>
+                            <td>Ciencia ficción</td>
+                            <td>Tecnología, mitología y conflicto entre luz y sombra.</td>
+                            <td>Combina aventura espacial con personajes muy reconocibles.</td>
                         </tr>
                         <tr>
-                            <td><strong>Daft Punk</strong></td>
-                            <td><span class="badge">Electrònica</span></td>
-                            <td>Random Access Memories (2013)</td>
-                            <td>— (Retirada)</td>
-                            <td>
-                                <a href="https://www.youtube.com/watch?v=5NV6Rdv1a3I" class="media-link video-icon" target="_blank" title="Veure Vídeo"><i class="fab fa-youtube"></i></a>
-                                <a href="#" class="media-link audio-icon" title="Escoltar Àudio"><i class="fas fa-volume-up"></i></a>
-                            </td>
+                            <td><strong>Mission: Impossible</strong></td>
+                            <td>Acción y espionaje</td>
+                            <td>Ritmo, estrategia, riesgo y trabajo en equipo.</td>
+                            <td>Mantiene tensión con misiones, giros y escenas de acción.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <!-- TAULA 2: PEL·LÍCULES -->
         <section class="card">
             <div class="section-head">
-                <h2><i class="fas fa-film"></i> Les meves pel·lícules imprescindibles</h2>
+                <h2>Libros recomendados</h2>
+                <p>Lecturas que mezclan pensamiento, razonamiento y literatura.</p>
             </div>
+
             <div class="table-wrapper">
-                <table>
+                <table class="preference-table">
                     <thead>
                         <tr>
-                            <th>Títol</th>
-                            <th>Director</th>
-                            <th>Any</th>
-                            <th>Puntuació</th>
+                            <th>Libro</th>
+                            <th>Autor / idioma</th>
+                            <th>Tipo</th>
+                            <th>Interés personal</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Inception</strong></td>
-                            <td>Christopher Nolan</td>
-                            <td>2010</td>
-                            <td><span class="stars">★★★★★</span></td>
+                            <td><strong>El filósofo autodidacta</strong></td>
+                            <td>Ibn Tufayl</td>
+                            <td>Filosofía</td>
+                            <td>Conocimiento, observación, razón y búsqueda personal.</td>
                         </tr>
                         <tr>
-                            <td><strong>Parasite</strong></td>
-                            <td>Bong Joon-ho</td>
-                            <td>2019</td>
-                            <td><span class="stars">★★★★★</span></td>
+                            <td><strong>أصول المعرفة</strong></td>
+                            <td>Árabe</td>
+                            <td>Lógica y conocimiento</td>
+                            <td>Fundamentos del pensamiento lógico y construcción de argumentos.</td>
                         </tr>
                         <tr>
-                            <td><strong>Interstellar</strong></td>
-                            <td>Christopher Nolan</td>
-                            <td>2014</td>
-                            <td><span class="stars">★★★★</span></td>
+                            <td><strong>Le Petit Prince</strong></td>
+                            <td>Antoine de Saint-Exupéry</td>
+                            <td>Literatura francesa</td>
+                            <td>Sencillez narrativa, poesía y reflexión humana.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <!-- TAULA 3: LLIBRES -->
-        <section class="card">
-            <div class="section-head">
-                <h2><i class="fas fa-book"></i> Els meus llibres recomanats</h2>
-            </div>
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Obra</th>
-                            <th>Autor</th>
-                            <th>Categoria</th>
-                            <th>Pàgines (aprox.)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>1984</strong></td>
-                            <td>George Orwell</td>
-                            <td>Distopia</td>
-                            <td>328</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Cent anys de solitud</strong></td>
-                            <td>Gabriel García Márquez</td>
-                            <td>Realisme Màgic</td>
-                            <td>471</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Sapiens</strong></td>
-                            <td>Yuval Noah Harari</td>
-                            <td>Assaig</td>
-                            <td>496</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
+        <nav class="page-links" aria-label="Enlaces entre paginas">
+            <a href="index.html">Volver al portafolio</a>
+            <a href="tarjeta.html">Ver tarjeta personal</a>
+            <a href="index.html#proyectos">Ver proyectos</a>
+        </nav>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Hassan Adraou — Curs IronHack</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Hassan Adraou - Curso IronHack</p>
     </footer>
-
 </body>
+
 </html>

@@ -1,137 +1,374 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hassan Adraou | CV Web</title>
-    <!-- Font Awesome per als icones -->
+    <title>Hassan Adraou | Portafolio web</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="hero">
+    <header class="hero" id="inici">
         <div class="hero-photo">
             <img src="profil.jpg" alt="Foto de Hassan Adraou">
         </div>
 
         <div class="hero-copy">
+            <p class="eyebrow">Perfil profesional y proyectos</p>
             <h1>Hassan Adraou</h1>
-            <p class="slogan">Traductor, intèrpret i redactor tècnic de documentació.</p>
+            <p class="slogan">Redactor técnico, traductor e intérprete multilingüe y profesor de idiomas.</p>
             <p class="summary">
-                Professional amb experiència en traducció entre àrab, espanyol i francès, interpretació en reunions i
-                redacció de documentació funcional i tècnica. Em defineixen la comunicació clara, l'organització i el
-                gust per aprendre de cultures, idiomes i projectes distintos.
+                Especialista en transformación digital y creación de conocimiento, con enfoque en formación,
+                redacción técnica, diseño de contenidos y desarrollo web. Conecto idiomas, documentación,
+                herramientas digitales e inteligencia artificial para crear soluciones claras y útiles.
             </p>
+            <div class="hero-actions">
+                <a class="button primary" href="#proyectos"><i class="fas fa-folder-open"></i> Ver proyectos</a>
+                <a class="button secondary" href="https://github.com/Adraouha" target="_blank" rel="noreferrer">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a class="button secondary" href="https://linkedin.com/in/adraou-hassan" target="_blank" rel="noreferrer">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a class="button secondary" href="cv-hassan-adraou.pdf" download>Descargar CV</a>
+            </div>
         </div>
     </header>
 
-    <nav style="background: var(--surface); border-bottom: 2px solid var(--line); padding: 12px 20px; text-align: center;">
-        <a href="index.html" style="color: var(--accent); text-decoration: none; margin: 0 18px; font-weight: bold; font-family: Georgia, serif;"><i class="fas fa-user"></i> Sobre mi</a>
-        <a href="preferencias.html" style="color: var(--accent); text-decoration: none; margin: 0 18px; font-weight: bold; font-family: Georgia, serif;"><i class="fas fa-star"></i> Preferències</a>
-        <a href="tarjeta.html" style="color: var(--accent); text-decoration: none; margin: 0 18px; font-weight: bold; font-family: Georgia, serif;"><i class="fas fa-id-card"></i> La meva targeta</a>
+    <nav class="site-nav" aria-label="Navegacion principal">
+        <a href="#sobre-mi">Sobre mi</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="preferencias.html">Preferencias</a>
+        <a href="tarjeta.html">Tarjeta</a>
+        <a class="nav-download" href="cv-hassan-adraou.pdf" download>Descargar CV</a>
     </nav>
 
     <main class="page">
-        <section class="about card">
-            <h2>Sobre mi</h2>
+        <section class="about card" id="sobre-mi">
+            <div class="section-head">
+                <h2>Sobre mi</h2>
+            </div>
             <p>
-                He treballat en projectes de traducció, docència i interpretació per a equips multiculturals. També
-                tinc formació en eines digitals, disseny gràfic i desenvolupament web, cosa que m'ajuda a connectar
-                llenguatge, contingut i estructura d'una manera molt pràctica.
+                Vivo en Vic, Barcelona, y cuento con más de seis años de experiencia combinando traducción,
+                interpretación, formación, redacción técnica y gestión de proyectos. Soy multilingüe en árabe,
+                español y francés, y actualmente refuerzo mi perfil técnico con desarrollo web, publicación en
+                GitHub Pages y herramientas de documentación.
             </p>
+        </section>
+
+        <section class="card" aria-labelledby="habilidades-title">
+            <div class="section-head">
+                <h2 id="habilidades-title">Habilidades y herramientas</h2>
+            </div>
+
+            <div class="details-row">
+                <article class="detail-box">
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li><strong>Arabe:</strong> nativo</li>
+                        <li><strong>Español:</strong> nivel alto - C1</li>
+                        <li><strong>Frances:</strong> avanzado - C1</li>
+                        <li><strong>Ingles:</strong> intermedio - B1</li>
+                        <li><strong>Catala:</strong> basico</li>
+                    </ul>
+                </article>
+
+                <article class="detail-box">
+                    <h3>Herramientas</h3>
+                    <ul>
+                        <li>HTML, CSS, JavaScript, Astro y Java</li>
+                        <li>Git, GitHub, GitBook y Docusaurus</li>
+                        <li>Trados, OmegaT, Notion, Jira y Trello</li>
+                        <li>InDesign, Illustrator, Photoshop y StoryLine</li>
+                    </ul>
+                </article>
+
+                <article class="detail-box">
+                    <h3>Fortalezas</h3>
+                    <ul>
+                        <li>Comunicacion intercultural</li>
+                        <li>Redaccion tecnica y funcional</li>
+                        <li>Gestion de documentacion y clientes</li>
+                        <li>Formacion y aprendizaje continuo</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="card" id="experiencia">
+            <div class="section-head">
+                <h2>Experiencia laboral</h2>
+                <p>Resumen de mi trayectoria profesional reciente.</p>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <span class="time">Jul. 2024 - Actualidad</span>
+                    <h3>Centers Specialist · NTT Data</h3>
+                    <p>Formacion y desarrollo de habilidades comunicativas orales y textuales en español.</p>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="time">Feb. 2024 - Jun. 2024</span>
+                    <h3>Jefe de Proyecto · Studio Moretto Group</h3>
+                    <p>Supervision de licitaciones, gestion de expedientes, relacion con clientes y busqueda de oportunidades comerciales.</p>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="time">Jul. 2023 - Ene. 2024</span>
+                    <h3>Traductor y Asistente de PM · Studio Moretto Group</h3>
+                    <p>Gestion de servicios de interpretacion, contratacion de interpretes y elaboracion de documentacion para clientes publicos.</p>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="time">May. 2023 - Jul. 2023</span>
+                    <h3>Traductor, Redactor y Diseñador · Universidad TECH</h3>
+                    <p>Traduccion de contenido del español al frances y edicion de recursos educativos con InDesign, Photoshop, StoryLine y Word.</p>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="time">Jul. 2020 - Dic. 2022</span>
+                    <h3>Interprete, Traductor y Redactor Tecnico · Grupo Avalon</h3>
+                    <p>Clases de español, interpretacion en reuniones y redaccion de documentacion tecnica y funcional.</p>
+                </article>
+            </div>
         </section>
 
         <section class="card">
             <div class="section-head">
-                <h2>Els meus 3 hobbies principals</h2>
+                <h2>Educacion</h2>
+            </div>
+
+            <div class="education-grid">
+                <article>
+                    <span>2023 - 2025</span>
+                    <h3>Institut Superieur de Genie Informatique (Sup'ISI)</h3>
+                    <p>Desarrollo de Software</p>
+                </article>
+                <article>
+                    <span>2020 - 2021</span>
+                    <h3>Instituto Cervantes, Tetuan</h3>
+                    <p>Español como Lengua Extranjera</p>
+                </article>
+                <article>
+                    <span>2015 - 2016</span>
+                    <h3>Instituto especializado en offshoring de profesiones, Tetuan</h3>
+                    <p>Tecnico de teleconsulta</p>
+                </article>
+                <article>
+                    <span>2012 - 2016</span>
+                    <h3>Universidad Abdel Malek Essaadi, Tetuan</h3>
+                    <p>Estudios de Educacion</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="card" id="proyectos">
+            <div class="section-head">
+                <h2>Proyectos web publicados</h2>
+                <p>Catalogo de proyectos de mi GitHub para compartir mi trabajo front-end.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div>
+                        <span class="project-icon"><i class="fas fa-wand-magic-sparkles"></i></span>
+                        <h3>Animaciones CSS</h3>
+                        <p>Practica de animaciones, transiciones y efectos hover para mejorar la interaccion visual.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://adraouha.github.io/animaciones_CSS/" target="_blank" rel="noreferrer">Demo</a>
+                        <a href="https://github.com/Adraouha/animaciones_CSS" target="_blank" rel="noreferrer">Codigo</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div>
+                        <span class="project-icon"><i class="fas fa-music"></i></span>
+                        <h3>Hack Mi Musica</h3>
+                        <p>Web tematica musical con contenido organizado y estructura pensada para navegar rapido.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://adraouha.github.io/hackMiMusica/" target="_blank" rel="noreferrer">Demo</a>
+                        <a href="https://github.com/Adraouha/hackMiMusica" target="_blank" rel="noreferrer">Codigo</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div>
+                        <span class="project-icon"><i class="fas fa-gamepad"></i></span>
+                        <h3>Joc Iron</h3>
+                        <p>Proyecto de juego web para practicar maquetacion, interaccion y organizacion de archivos.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://adraouha.github.io/Joc_Iron/" target="_blank" rel="noreferrer">Demo</a>
+                        <a href="https://github.com/Adraouha/Joc_Iron" target="_blank" rel="noreferrer">Codigo</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div>
+                        <span class="project-icon"><i class="fas fa-users"></i></span>
+                        <h3>IronNous</h3>
+                        <p>Proyecto colaborativo de IronHack para practicar estructura web y publicacion en GitHub.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://adraouha.github.io/IronNous/" target="_blank" rel="noreferrer">Demo</a>
+                        <a href="https://github.com/Adraouha/IronNous" target="_blank" rel="noreferrer">Codigo</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="section-head">
+                <h2>Proyectos profesionales</h2>
+                <p>Trabajos reales de traduccion, documentacion, gestion e interpretacion.</p>
+            </div>
+
+            <div class="professional-grid">
+                <article>
+                    <h3>Gestion del proyecto DGEF</h3>
+                    <p>Gestion de misiones y servicios de interpretacion solicitados por OFII.</p>
+                    <div class="skill-list">
+                        <span>Interpretes</span>
+                        <span>Documentacion</span>
+                        <span>Informes</span>
+                        <span>Facturas</span>
+                    </div>
+                </article>
+
+                <article>
+                    <h3>Departamento de Licitaciones - SMG</h3>
+                    <p>Preparacion y presentacion de expedientes de licitacion publica y solicitudes de clientes.</p>
+                    <div class="skill-list">
+                        <span>Ofertas tecnicas</span>
+                        <span>Ofertas economicas</span>
+                        <span>Clientes</span>
+                        <span>Coordinacion</span>
+                    </div>
+                </article>
+
+                <article>
+                    <h3>Proyecto MIUN</h3>
+                    <p>Redaccion del manual de uso de intranet y documentacion de integracion del modulo 107.</p>
+                    <div class="skill-list">
+                        <span>Redaccion tecnica</span>
+                        <span>Documentacion funcional</span>
+                    </div>
+                </article>
+
+                <article>
+                    <h3>Traduccion cientifica</h3>
+                    <p>Traduccion del español al frances y edicion de material educativo de Universidad TECH.</p>
+                    <div class="skill-list">
+                        <span>Traduccion tecnica</span>
+                        <span>Recursos didacticos</span>
+                        <span>Diseño educativo</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="section-head">
+                <h2>Intereses personales</h2>
             </div>
 
             <div class="hobbies-main">
                 <article class="hobby-card">
-                    <img src="lectura.jpeg" alt="Ilustració de lectura">
+                    <img src="logo.png" alt="Ejemplo de diseno grafico">
                     <div class="hobby-text">
-                        <h3>Lectura</h3>
-                        <p>M'agrada llegir sobre cultura, història i comunicació per seguir ampliant vocabulari i idees.</p>
+                        <h3>Diseño grafico</h3>
+                        <p>Me interesa crear piezas visuales claras, cuidar la composicion y comunicar ideas con identidad.</p>
                     </div>
                 </article>
 
                 <article class="hobby-card accent">
-                    <img src="viajar.jpeg" alt="Ilustració de viatges i exploració">
+                    <img src="viajar.jpeg" alt="Ilustracion de viajes y exploracion">
                     <div class="hobby-text">
-                        <h3>Viatjar i descobrir llocs</h3>
-                        <p>Gaudeixo coneixent ciutats noves, observar costums distints i aprendre de l'entorn.</p>
+                        <h3>Viajar</h3>
+                        <p>Disfruto conociendo ciudades nuevas, observando costumbres diferentes y aprendiendo del entorno.</p>
                     </div>
                 </article>
 
                 <article class="hobby-card">
-                    <img src="luna.jpeg" alt="Ilustració de gat">
+                    <img src="lectura.jpeg" alt="Ilustracion de aprendizaje y programacion">
                     <div class="hobby-text">
-                        <h3>Amor pels gats</h3>
-                        <p>La meva estimada Luna (està al cel ara) va ser una companya que em va ensenyar a ser un amant dels animals.</p>
+                        <h3>Programacion</h3>
+                        <p>Practico desarrollo web para unir logica, estructura, diseno y publicacion de proyectos reales.</p>
+                    </div>
+                </article>
+
+                <article class="hobby-card accent">
+                    <img src="nous-logo.png" alt="Logo relacionado con autoformacion">
+                    <div class="hobby-text">
+                        <h3>Autoformacion</h3>
+                        <p>Aprendo de forma constante con documentacion, cursos, practica y proyectos personales.</p>
+                    </div>
+                </article>
+
+                <article class="hobby-card">
+                    <img src="luna.jpeg" alt="Imagen simbolica de curiosidad e idiomas">
+                    <div class="hobby-text">
+                        <h3>Aprender idiomas</h3>
+                        <p>Los idiomas son parte de mi trabajo y tambien una forma de conectar culturas y personas.</p>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section class="card">
-            <div class="section-head">
-                <h2>Altres hobbies i interessos</h2>
+        <section class="contact-section card" id="contacto">
+            <div class="contact-copy">
+                <div class="section-head">
+                    <h2>Contacto</h2>
+                </div>
+                <p>
+                    Tienes una propuesta, pregunta o comentario sobre algun proyecto? Puedes escribirme por email,
+                    LinkedIn o usando este formulario simple.
+                </p>
+                <a class="github-link" href="mailto:adraouhassan@gmail.com">
+                    <i class="fas fa-envelope"></i> adraouhassan@gmail.com
+                </a>
+                <a class="github-link" href="tel:+34614473524">
+                    <i class="fas fa-phone"></i> +34 614 47 35 24
+                </a>
+                <a class="github-link" href="https://linkedin.com/in/adraou-hassan" target="_blank" rel="noreferrer">
+                    <i class="fab fa-linkedin"></i> linkedin.com/in/adraou-hassan
+                </a>
+                <a class="github-link" href="https://github.com/Adraouha" target="_blank" rel="noreferrer">
+                    <i class="fab fa-github"></i> github.com/Adraouha
+                </a>
             </div>
 
-            <div class="hobbies-other">
-                <div class="mini-hobby">Música de rap</div>
-                <div class="mini-hobby">Disseny gràfic</div>
-                <div class="mini-hobby">Programació</div>
-                <div class="mini-hobby">Senderisme</div>
-                <div class="mini-hobby">Cafè i Tè marroquí</div>
-                <div class="mini-hobby">Redacció i documentació</div>
-                <div class="mini-hobby">Natació</div>
-            </div>
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="nombre@example.com" required>
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+                <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+            </form>
         </section>
 
-        <section class="details-row">
-            <article class="card detail-box">
-                <h2>Idiomes</h2>
-                <ul>
-                    <li><strong>Àrab:</strong> llengua materna</li>
-                    <li><strong>Espanyol:</strong> fluït</li>
-                    <li><strong>Francès:</strong> avançat</li>
-                    <li><strong>Anglès:</strong> intermedi</li>
-                    <li><strong>Català:</strong> bàsic</li>
-                </ul>
-            </article>
-
-            <article class="card detail-box">
-                <h2>Eines</h2>
-                <ul>
-                    <li>Microsoft 365</li>
-                    <li>Photoshop, Illustrator, InDesign</li>
-                    <li>HTML, CSS, Bootstrap, WordPress</li>
-                    <li>Trello, Wekan, EasyRedmine</li>
-                    <li>Trados, OmegaT</li>
-                </ul>
-            </article>
-
-            <article class="card detail-box">
-                <h2>Fortaleses</h2>
-                <ul>
-                    <li>Treball en equipo</li>
-                    <li>Organització</li>
-                    <li>Comunicació intercultural</li>
-                    <li>Iniciativa i proactivitat</li>
-                </ul>
-            </article>
-        </section>
-
-        <section class="card" style="text-align: center; margin-top: 20px;">
-            <a href="preferencias.html" class="mini-hobby" style="display: inline-block; text-decoration: none; background: var(--accent); color: white; border: none; padding: 15px 30px; font-size: 1.1rem; border-radius: 10px;">
-                Veure les meves preferències <i class="fas fa-arrow-right"></i>
-            </a>
-        </section>
+        <nav class="page-links" aria-label="Enlaces entre paginas">
+            <a href="preferencias.html">Ver preferencias</a>
+            <a href="tarjeta.html">Ver tarjeta personal</a>
+            <a href="#inici">Volver arriba</a>
+        </nav>
     </main>
 
-    <footer>
-        <p style="text-align: center; padding: 20px; color: var(--muted);">&copy; 2026 Hassan Adraou — Curs IronHack</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Hassan Adraou - Curso IronHack</p>
     </footer>
 </body>
+
 </html>

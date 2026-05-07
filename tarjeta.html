@@ -1,205 +1,128 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La meva targeta | Hassan Adraou</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Tarjeta personal | Hassan Adraou</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Adaptació de la targeta al sistema d'estils de style.css */
-
-        .card-container {
-            max-width: 1000px;
-            margin: 40px auto;
-            background: #d6d7da;
-            /* Color de card en style.css */
-            border-radius: 24px;
-            border: 2px solid var(--accent);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            display: flex;
-            flex-direction: column;
-            color: #000;
-        }
-
-        .card-header {
-            background: var(--surface-strong);
-            color: var(--accent);
-            text-align: center;
-            padding: 25px;
-            font-size: clamp(1.8rem, 4vw, 2.8rem);
-            font-family: Georgia, serif;
-            text-transform: uppercase;
-            border-bottom: 3px solid var(--accent);
-            letter-spacing: 2px;
-        }
-
-        .card-body {
-            display: flex;
-            padding: 35px;
-            gap: 40px;
-        }
-
-        .card-photo {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .card-photo img {
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-            object-fit: cover;
-            border: 3px solid var(--accent);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-
-        .card-photo img:hover {
-            transform: scale(1.02);
-        }
-
-        .card-content {
-            flex: 1.2;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .card-content p {
-            font-size: 1.15rem;
-            line-height: 1.6;
-            color: #1d5b99;
-            /* Color de text definit per l'usuari en style.css */
-            text-align: justify;
-        }
-
-        .video-container {
-            width: 100%;
-            border-radius: 18px;
-            overflow: hidden;
-            border: 2px solid var(--accent);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .video-container iframe {
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            display: block;
-        }
-
-        .multimedia-links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-top: 10px;
-        }
-
-        .multimedia-links a {
-            color: var(--accent-deep);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: bold;
-            font-size: 1.05rem;
-            transition: transform 0.2s, color 0.2s;
-        }
-
-        .multimedia-links a:hover {
-            color: var(--accent);
-            transform: translateX(10px);
-        }
-
-        .audio-player-container {
-            background: var(--surface-strong);
-            padding: 15px;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            margin-top: 10px;
-            border: 1px solid var(--accent);
-        }
-
-        .audio-player-container audio {
-            width: 100%;
-            height: 40px;
-        }
-
-        /* Responsive */
-        @media (max-width: 850px) {
-            .card-body {
-                flex-direction: column;
-            }
-
-            .card-photo {
-                min-width: 100%;
-            }
-        }
-    </style>
 </head>
 
 <body>
-
-    <nav
-        style="background: var(--surface); border-bottom: 2px solid var(--line); padding: 12px 20px; text-align: center;">
-        <a href="about.html"
-            style="color: var(--accent); text-decoration: none; margin: 0 18px; font-weight: bold; font-family: Georgia, serif;"><i
-                class="fas fa-user"></i> Sobre mi</a>
-        <a href="preferencias.html"
-            style="color: var(--accent); text-decoration: none; margin: 0 18px; font-weight: bold; font-family: Georgia, serif;"><i
-                class="fas fa-star"></i> Preferències</a>
-        <a href="tarjeta.html"
-            style="color: var(--accent); text-decoration: none; margin: 0 18px; font-weight: bold; font-family: Georgia, serif;"><i
-                class="fas fa-id-card"></i> La meva targeta</a>
+    <nav class="site-nav" aria-label="Navegacion principal">
+        <a href="index.html">Sobre mi</a>
+        <a href="index.html#experiencia">Experiencia</a>
+        <a href="index.html#proyectos">Proyectos</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="preferencias.html">Preferencias</a>
+        <a href="tarjeta.html">Tarjeta</a>
+        <a class="nav-download" href="cv-hassan-adraou.pdf" download>Descargar CV</a>
     </nav>
 
+    <header class="page-hero">
+        <p class="eyebrow">Tarjeta personal</p>
+        <h1>Hassan Adraou</h1>
+        <p class="slogan">Comunicacion, idiomas, documentacion y desarrollo web.</p>
+    </header>
+
     <main class="page">
-        <div class="card-container">
-            <div class="card-header">
-                Hassan Adraou
+        <section class="profile-card">
+            <div class="profile-photo">
+                <img src="profil.jpg" alt="Foto de Hassan Adraou">
             </div>
 
-            <div class="card-body">
-                <div class="card-photo">
-                    <img src="profil.jpg" alt="Foto de Hassan Adraou">
-                </div>
+            <div class="profile-content">
+                <span class="tag">Vic, Barcelona</span>
+                <h2>Redactor tecnico, traductor e interprete multilingue</h2>
+                <p>
+                    Soy Hassan Adraou, profesional de la comunicacion multilingue con experiencia en traduccion,
+                    interpretacion, formacion, redaccion tecnica y gestion de proyectos. Trabajo entre arabe,
+                    español y frances, y estoy ampliando mi perfil hacia el desarrollo web, la documentacion digital
+                    y la inteligencia artificial aplicada a contenidos educativos, tecnicos y culturales.
+                </p>
+                <p>
+                    Este portafolio conecta mi trayectoria profesional con mis proyectos front-end: paginas publicadas
+                    en GitHub Pages, practicas con HTML y CSS, maquetacion con flexbox y una forma cada vez mas clara
+                    de presentar mi trabajo.
+                </p>
 
-                <div class="card-content">
-                    <p>
-                        Hola! Sóc en Hassan Adraou, traductor i redactor tècnic. Em fascina la comunicació entre
-                        cultures i la tecnologia. Aquesta és la meva targeta personal on combino la meva passió pels
-                        idiomes amb el disseny digital.
-                    </p>
-
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/bvl9Kw3mHIg" title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-
-
-
-                    <div class="audio-player-container">
-                        <!-- Placeholder de audio funcional (enlace de ejemplo a MP3 público si fuera posible, sino dejamos el reproductor listo) -->
-
-                        <iframe src="https://archive.org/embed/lil-peep-come-over-when-youre-sober-pt.-2" width="500"
-                            height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true"
-                            allowfullscreen></iframe>
-
-                    </div>
+                <div class="profile-links">
+                    <a href="mailto:adraouhassan@gmail.com">adraouhassan@gmail.com</a>
+                    <a href="https://linkedin.com/in/adraou-hassan" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="cv-hassan-adraou.pdf" download>Descargar CV</a>
+                    <a href="https://github.com/Adraouha" target="_blank" rel="noreferrer">GitHub</a>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="card">
+            <div class="section-head">
+                <h2>Intereses</h2>
+                <p>Areas que alimentan mi aprendizaje y mi forma de crear.</p>
+            </div>
+
+            <div class="interest-grid">
+                <article>
+                    <h3>Diseño grafico</h3>
+                    <p>Me interesa la composicion visual, el color y la comunicacion clara de una idea.</p>
+                </article>
+                <article>
+                    <h3>Viajar</h3>
+                    <p>Viajar me ayuda a observar culturas, idiomas y formas distintas de entender el mundo.</p>
+                </article>
+                <article>
+                    <h3>Programacion</h3>
+                    <p>Estoy construyendo bases solidas en HTML, CSS, JavaScript y desarrollo de software.</p>
+                </article>
+                <article>
+                    <h3>Autoformacion</h3>
+                    <p>Aprendo de manera constante con proyectos, documentacion, practica y curiosidad.</p>
+                </article>
+                <article>
+                    <h3>Aprender idiomas</h3>
+                    <p>Los idiomas son una herramienta profesional y una manera de conectar con personas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="section-head">
+                <h2>Audio destacado</h2>
+                <p>Nach, conocido tambien como Nach Scratch - La Vida Se Va, del album Destino (2025), con Eladio Carrion.</p>
+            </div>
+
+            <div class="spotify-card">
+                <iframe src="https://open.spotify.com/embed/track/5hjvY1YhJjwZ4Fv2mOCDlg?utm_source=generator"
+                    width="100%" height="152" frameborder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy" title="Spotify: Nach - La Vida Se Va"></iframe>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="section-head">
+                <h2>Video</h2>
+                <p>Un espacio multimedia para complementar mi presentacion personal.</p>
+            </div>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/bvl9Kw3mHIg" title="Video de presentacion"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <nav class="page-links" aria-label="Enlaces entre paginas">
+            <a href="index.html">Volver al portafolio</a>
+            <a href="preferencias.html">Ver preferencias</a>
+            <a href="index.html#contacto">Contactar</a>
+        </nav>
     </main>
 
-    <footer>
-        <p style="text-align: center; padding: 20px; color: var(--muted);">&copy; 2026 Hassan Adraou — Curs IronHack</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Hassan Adraou - Curso IronHack</p>
     </footer>
-
 </body>
 
 </html>
