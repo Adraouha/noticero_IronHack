@@ -345,15 +345,20 @@
                 </a>
             </div>
 
-            <form class="contact-form" action="#" method="post">
+            <form class="contact-form" action="https://formspree.io/f/mdabwpzl" method="POST">
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio de Hassan Adraou">
+
                 <label for="name">Nombre</label>
-                <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+                <input id="name" name="name" type="text" placeholder="Tu nombre" autocomplete="name" required>
 
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="nombre@example.com" required>
+                <input id="email" name="email" type="email" placeholder="nombre@example.com" autocomplete="email" required>
 
                 <label for="message">Mensaje</label>
                 <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+                <label class="form-honeypot" for="website">Sitio web</label>
+                <input class="form-honeypot" id="website" name="website" type="text" tabindex="-1" autocomplete="off">
 
                 <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
             </form>
